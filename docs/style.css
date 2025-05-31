@@ -28,12 +28,13 @@ html {
   transition: transform 0.25s ease;
 }
 
-/* Navbar transparent until scrolled */
-.navbar{
-  transition: background-color 0.3s ease;
+/* Navbar gradient background */
+.navbar {
+  background: linear-gradient(90deg, #002d9e 0%, #000000 100%);
 }
+
 body:not(.scrolled) .navbar {
-  background-color: rgba(0,0,0,0.15) !important;
+  background: linear-gradient(90deg, #002d9e 0%, #000000 100%) !important;
   backdrop-filter: saturate(180%) blur(20px);
 }
 

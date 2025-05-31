@@ -27,7 +27,8 @@
           <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
           <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="btn btn-primary ms-lg-3" target="_blank" href="https://github.com/huyuelin/MeetBench-MeetAll.github.io"><i class="fab fa-github"></i> GitHub</a></li>
+          <li class="nav-item"><a class="btn btn-warning ms-lg-3" target="_blank" href="https://huggingface.co/datasets/YueLinHu/MeetAll"><i class="fas fa-database"></i> HuggingFace</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-3" target="_blank" href="https://github.com/MeetBench/MeetBench"><i class="fab fa-github"></i> GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -39,7 +40,7 @@
       <h1 class="display-4 fw-bold mb-3">MeetAll · MeetBench · MeetMaster</h1>
       <p class="lead mb-4">A Multimodal &amp; Multilingual Meeting-Agent Suite for <span class="text-info">ACM Multimedia 2025</span></p>
       <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-        <a href="https://arxiv.org/pdf/2308.03688" class="btn btn-outline-light btn-lg" target="_blank"><i class="fas fa-file-pdf"></i> Read the Paper</a>
+        <a href="https://arxiv.org/pdf/2308.03688" class="btn btn-danger btn-lg" target="_blank" style="background-color:#8b0000;border-color:#8b0000"><i class="fas fa-file-pdf"></i> Read the Paper</a>
         <a href="#features" class="btn btn-primary btn-lg"><i class="fas fa-arrow-down"></i> Explore</a>
       </div>
     </div>
@@ -54,14 +55,14 @@
           <div class="feature-card p-4 h-100 text-center">
             <i class="fas fa-database fa-3x mb-3 text-primary"></i>
             <h5>Rich Data</h5>
-            <p class="small">200&nbsp;h bilingual (English &amp; Mandarin) audio with aligned transcripts.</p>
+            <p class="small">140&nbsp;h bilingual (English &amp; Mandarin) audio with aligned transcripts.</p>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="feature-card p-4 h-100 text-center">
             <i class="fas fa-question-circle fa-3x mb-3 text-primary"></i>
             <h5>Diverse QA</h5>
-            <p class="small">2&nbsp;000+ human-verified QA pairs spanning 108 complexity cells.</p>
+            <p class="small">1&nbsp;180+ human-verified QA pairs spanning 13 complexity cells.</p>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
@@ -117,7 +118,35 @@
   <!-- RESULTS -->
   <section id="results" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5" data-aos="zoom-in">Benchmark Results</h2>
+      <h2 class="text-center mb-5" data-aos="zoom-in">Dataset & Benchmark Results</h2>
+
+      <!-- Dataset comparison table -->
+      <div class="table-responsive mb-5" data-aos="fade-up">
+        <h4 class="text-center mb-3">MeetAll vs. Existing Meeting ASR Datasets</h4>
+        <table class="table table-bordered table-striped align-middle text-center">
+          <thead class="table-dark small">
+            <tr>
+              <th rowspan="2">Dataset</th>
+              <th colspan="3">Details</th>
+              <th colspan="2">Modality</th>
+              <th colspan="3">Agent</th>
+            </tr>
+            <tr class="small">
+              <th>Meetings</th><th>Hours</th><th>Bilingual</th>
+              <th>Text</th><th>Speech</th>
+              <th>w/o Agent QA</th><th>Voice&nbsp;Cloned</th><th>Multi-QA Complexity</th>
+            </tr>
+          </thead>
+          <tbody class="small">
+            <tr><td>MeeQA</td><td>422</td><td>100+</td><td><span class="text-danger">✗</span></td><td>✓</td><td>✗</td><td>✓ (Single)</td><td>✗</td><td>✗</td></tr>
+            <tr><td>AISHELL-3</td><td>218</td><td>85</td><td>Partial</td><td>✓</td><td>✓</td><td>✗</td><td>✗</td><td>✗</td></tr>
+            <tr><td>AISHELL-4</td><td>211</td><td>120</td><td>✓</td><td>✓</td><td>✓</td><td>✗</td><td>✗</td><td>✗</td></tr>
+            <tr><td>CHiME-6</td><td>20</td><td>50</td><td><span class="text-danger">✗</span></td><td>✓</td><td>✓</td><td>✗</td><td>✗</td><td>✗</td></tr>
+            <tr class="table-primary fw-bold"><td>MeetAll</td><td>231</td><td>140</td><td>✓</td><td>✓</td><td>✓</td><td>✓ (Multiple)</td><td>✓</td><td>✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="table-responsive" data-aos="fade-up">
         <table class="table table-striped table-hover align-middle text-center">
           <thead class="table-dark">

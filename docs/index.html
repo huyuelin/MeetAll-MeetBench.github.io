@@ -35,13 +35,23 @@
   </nav>
 
   <!-- HERO -->
-  <section id="hero" class="vh-100 d-flex align-items-center text-white bg-gradient">
-    <div class="container text-center" data-aos="fade-up">
-      <h1 class="display-4 fw-bold mb-3">MeetAll · MeetBench · MeetMaster</h1>
-      <p class="lead mb-4">A Multimodal &amp; Multilingual Meeting-Agent Suite for <span class="text-info">ACM Multimedia 2025</span></p>
-      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-        <a href="https://arxiv.org/pdf/2308.03688" class="btn btn-danger btn-lg" target="_blank" style="background-color:#8b0000;border-color:#8b0000"><i class="fas fa-file-pdf"></i> Read the Paper</a>
-        <a href="#features" class="btn btn-primary btn-lg"><i class="fas fa-arrow-down"></i> Explore</a>
+  <section id="hero" class="vh-100 d-flex align-items-center text-white bg-gradient overflow-hidden">
+    <div class="container" data-aos="fade-up">
+      <!-- Conference tag -->
+      <h2 class="display-5 fw-bold text-dark bg-white rounded-pill px-4 py-1 mb-4 d-inline-block shadow-sm">ACM Multimedia 2025</h2>
+
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-4 fw-bold mb-3">MeetAll · MeetBench · MeetMaster</h1>
+          <p class="lead mb-4">A Multimodal &amp; Multilingual Meeting-Agent Suite</p>
+          <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+            <a href="https://arxiv.org/pdf/2308.03688" class="btn btn-danger btn-lg" target="_blank" style="background-color:#8b0000;border-color:#8b0000"><i class="fas fa-file-pdf"></i> Read the Paper</a>
+            <a href="#features" class="btn btn-primary btn-lg"><i class="fas fa-arrow-down"></i> Explore</a>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <object data="../pdf/teaser_0529_final.pdf" type="application/pdf" width="100%" style="height:400px;border-radius:0.5rem;" aria-label="Teaser"></object>
+        </div>
       </div>
     </div>
   </section>
@@ -158,6 +168,11 @@
             <tr><td>LLAMA-7B</td><td>3.59</td><td>3.31</td><td>4.01</td><td>3.67</td><td>3.05</td><td>3.30</td></tr>
             <tr><td>LLAMA-13B</td><td>5.58</td><td>5.07</td><td>6.14</td><td>6.08</td><td>4.77</td><td>5.13</td></tr>
             <tr><td>Qwen2.5-7B-Inst.</td><td>7.31</td><td>6.18</td><td>7.06</td><td>6.89</td><td>5.56</td><td>6.29</td></tr>
+            <tr><td>chatGLM3-6B</td><td>6.01</td><td>5.29</td><td>6.33</td><td>6.17</td><td>4.91</td><td>5.44</td></tr>
+            <tr><td>deepseek-r1-7B</td><td>7.32</td><td>6.43</td><td>7.74</td><td>7.21</td><td>5.91</td><td>6.50</td></tr>
+            <tr><td>Qwen-Agent(Qwen2.5-7B api)</td><td>7.44</td><td>6.53</td><td>7.72</td><td>7.24</td><td>6.21</td><td>6.56</td></tr>
+            <tr><td>Phi-1</td><td>5.38</td><td>5.27</td><td>6.12</td><td>5.13</td><td>6.17</td><td>4.27</td></tr>
+            <tr><td>Phi-1.5</td><td>5.98</td><td>5.63</td><td>6.17</td><td>5.68</td><td>6.34</td><td>5.67</td></tr>
             <tr class="table-primary"><td><strong>MeetMaster</strong></td><td><strong>7.50</strong></td><td><strong>6.57</strong></td><td><strong>7.76</strong></td><td><strong>7.33</strong></td><td><strong>6.36</strong></td><td><strong>6.59</strong></td></tr>
           </tbody>
         </table>
